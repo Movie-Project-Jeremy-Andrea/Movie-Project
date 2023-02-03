@@ -19,8 +19,8 @@ function getMovies () {
         $.each(data, function(data,value){
             movies += `
             <div class="movieItem card d-flex flex-row m-2 p-2" id="moveieItem${value.id}">
-                <div class="flex-grow-1">
-                    <div class="fs-5 fw-bolder">${value.title}</div>
+                <div class="movieCard flex-grow-1">
+                    <div class="movieTitles fs-5 fw-bolder">${value.title}</div>
                     <div>Rating: ${value.rating}/10</div>
                     <div>Genre: ${value.genre}</div>
                     <div>Director: ${value.director}</div>
@@ -76,14 +76,42 @@ $("#editMoviesSubmitBtn").click(function(event){
 
 });
 
-//delete button functionality
+//delete button functionality for deleting movie cards
 $("#deleteBtn").click(function(){
     // event.preventDefault();
     console.log("working");
     // $(this).parents("#movieContent").hide();
 });
 
+//search bar functionality
+$("#searchBtn").click(function(event){
+   console.log("working");
+   let input = document.getElementById("searchInput").value;
+   input.toLowerCase();
+    let movieTitles = document.getElementsByClassName("movieTitles");
+    for (let i = 0; i < movieTitles.length; i++) {
+        if(!movieTitles[i].innerHTML.toLowerCase().includes(input)){
+            movieTitles[i].style.display = "none";
+        }else {
+            movieTitles[i].style.display = "block";
+        }
+    }
+});
 
+//filter functionality
+$("#titleFilter").click(function(){
+    console.log("working");
+    let sortedCards = $(".movieCards").sort(function(a,b){
+        return $(a).find(".movieTitles").text().localeCompare()($(b).find(".movieTitles").text());
+    })
+    $("#movieContent").remove(".movieCards").append(sortedCards);
+});
+$("#ratingFilter").click(function(){
+    console.log("working");
+});
+$("#genreFilter").click(function(){
+    console.log("working");
+});
 
 
 // function deleteBtn() {
