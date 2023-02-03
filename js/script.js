@@ -1,23 +1,6 @@
 "use strict";
 
-// const reviewObj = {
-//     restaurant_id: 1,
-//     name: 'Jeremy',
-//     rating: 5,
-//     comments: "first review"
-// };
 const url = 'https://round-puffy-blizzard.glitch.me/movies';
-// const options = {
-//     method: 'POST',
-//     headers: {
-//         'Content-Type': 'application/json',
-//     },
-//     body: JSON.stringify(reviewObj),
-// };
-// fetch(url)
-//     .then( response => console.log(response) ) /* review was created successfully */
-//     .catch( error => console.error(error) ); /* handle errors */
-
 
 // loading message function to disappear and show movie lists after 5 seconds
 function startDelay(){
@@ -45,16 +28,16 @@ function getMovies () {
                     <div class="fst-italic">"${value.tagline}"</div>
                 </div>
                 <div class="controls d-flex flex-column ps-2 justify-content-between">
-                    <button  type="button" class="btn btn-light" >
+                    <button id="deleteBtn" type="button" class="deleteBtn btn btn-light" >
                         <i class="fa-solid fa-xmark"></i>
                     </button>
-                    <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#editMovieModal">
+                    <button type="button" class="editBtn btn btn-light" data-bs-toggle="modal" data-bs-target="#editMovieModal">
                         <i class="fa-solid fa-pen"></i>
                     </button>
                 </div>
             </div>
             `;
-        })
+        });
         $("#movieContent").html(movies);
     });
 }
@@ -64,7 +47,7 @@ function getMovies () {
 //
 // });
 
-//submit button functionality for new movies
+//submit button functionality for add movies
 $("#addMoviesSubmitBtn").click(function(event){
     event.preventDefault();
     console.log("working");
@@ -81,9 +64,6 @@ $("#addMoviesSubmitBtn").click(function(event){
     };
     fetch(url,options)
         .then(function(response){
-        // let movieTitle = document.getElementById('mtitle').value;
-        // let movieRating = document.getElementById('mrating').value;
-        // addMovie(movieTitle,movieRating);
     });
 
 });
@@ -96,6 +76,37 @@ $("#editMoviesSubmitBtn").click(function(event){
 
 });
 
+//delete button functionality
+$("#deleteBtn").click(function(){
+    // event.preventDefault();
+    console.log("working");
+    // $(this).parents("#movieContent").hide();
+});
+
+
+
+
+// function deleteBtn() {
+//     let deleteBtn = document.querySelector("#deleteBtn");
+//     deleteBtn.forEach(function () {
+//         $(".deleteBtn").click(function () {
+//             console.log("working");
+//             // deleteMovieById();
+//         });
+    // })
+// }
+// deleteBtn();
+
+// function deleteMovieById(){
+//     document.getElementById(`moveieItem${value.id}`)
+//         .outerHTML = "";
+// }
+
+
+
+
+
+
 // function to add a movie; possibly useful later
 // function addMovie(inputTitle, inputRating){
 //     let movie = {};
@@ -107,9 +118,9 @@ $("#editMoviesSubmitBtn").click(function(event){
 //     $("#movieContent").prepend($("movie"));
 // }
 
-//edit modal functionality
-let editModal = document.querySelector("#editMovieModal");
-let editModalBtn = document.querySelector("#editMoviesSubmitBtn");
+// //edit modal functionality
+// let editModal = document.querySelector("#editMovieModal");
+// let editModalBtn = document.querySelector("#editMoviesSubmitBtn");
 
 
 
