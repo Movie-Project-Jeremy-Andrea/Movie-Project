@@ -1,0 +1,5537 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)https://java.codeup.com/java-ii/object-oriented-programming/ -->
+<html lang="en" class="js-focus-visible js" data-js-focus-visible=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+      
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="http://java.fulgentcorp.com/java-ii/object-oriented-programming/">
+      
+      <link rel="icon" href="https://java.codeup.com/img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
+    
+    
+      
+        <title>Object Oriented Programming - Codeup Java</title>
+      
+    
+    
+      <link rel="stylesheet" href="./d_files/main.975780f9.min.css">
+      
+        
+        <link rel="stylesheet" href="./d_files/palette.2505c338.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#8bc34b">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+        <link rel="stylesheet" href="./d_files/css">
+        <style>:root{--md-text-font:"Open Sans";--md-code-font:"IBM Plex Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  <link rel="stylesheet" href="./d_files/custom.9097afc2.min.css">
+
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="light-green" data-md-color-accent="deep-purple" data-new-gr-c-s-check-loaded="14.1096.0" data-gr-ext-installed="" data-new-gr-c-s-loaded="14.1096.0">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="https://java.codeup.com/java-ii/object-oriented-programming/#object-oriented-programming" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="https://java.codeup.com/" title="Codeup Java" class="md-header__button md-logo" aria-label="Codeup Java" data-md-component="logo">
+      
+  <img src="./d_files/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+    </label>
+    <div class="md-header__title md-header__title--active" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Codeup Java
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Object Oriented Programming
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required="">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap">
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">Type to start searching</div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs" hidden="">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://java.codeup.com/" class="md-tabs__link">
+        Introduction
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://java.codeup.com/html-css/" class="md-tabs__link">
+        HTML and CSS
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://java.codeup.com/javascript-i/" class="md-tabs__link">
+        JavaScript I
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://java.codeup.com/jquery/" class="md-tabs__link">
+        jQuery
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://java.codeup.com/javascript-ii/" class="md-tabs__link">
+        JavaScript II
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://java.codeup.com/java-i/" class="md-tabs__link">
+        Java I
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://java.codeup.com/java-ii/" class="md-tabs__link md-tabs__link--active">
+        Java II
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://java.codeup.com/mysql/" class="md-tabs__link">
+        MySQL
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://java.codeup.com/java-iii/" class="md-tabs__link">
+        Java III
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://java.codeup.com/spring/" class="md-tabs__link">
+        Spring
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://java.codeup.com/capstone/" class="md-tabs__link">
+        Capstone Project
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://java.codeup.com/appendix/" class="md-tabs__link">
+        Appendix
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://java.codeup.com/" title="Codeup Java" class="md-nav__button md-logo" aria-label="Codeup Java" data-md-component="logo">
+      
+  <img src="./d_files/logo.png" alt="logo">
+
+    </a>
+    Codeup Java
+  </label>
+  
+  <ul class="md-nav__list">
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1">
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1">
+          Introduction
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Introduction" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          Introduction
+        </label>
+        <ul class="md-nav__list">
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/toc/" class="md-nav__link">
+        Table of Contents
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2">
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          HTML and CSS
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="HTML and CSS" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          HTML and CSS
+        </label>
+        <ul class="md-nav__list">
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/html-css/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/html-css/introduction/" class="md-nav__link">
+        Introduction to HTML
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/html-css/elements/" class="md-nav__link">
+        HTML Elements
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/html-css/forms/" class="md-nav__link">
+        HTML Forms
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_5" type="checkbox" id="__nav_2_5">
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_5">
+          CSS I
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="CSS I" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_5">
+          <span class="md-nav__icon md-icon"></span>
+          CSS I
+        </label>
+        <ul class="md-nav__list">
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/html-css/css-i/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/html-css/css-i/introduction/" class="md-nav__link">
+        Introduction to CSS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/html-css/css-i/selectors-and-properties/" class="md-nav__link">
+        Selectors and Properties
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/html-css/css-i/box-model/" class="md-nav__link">
+        Box Model
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/html-css/css-i/positioning/" class="md-nav__link">
+        Positioning
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_5_6" type="checkbox" id="__nav_2_5_6">
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_5_6">
+          Flexbox
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Flexbox" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_5_6">
+          <span class="md-nav__icon md-icon"></span>
+          Flexbox
+        </label>
+        <ul class="md-nav__list">
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/html-css/css-i/flexbox/flexbox-fundamentals/" class="md-nav__link">
+        Flexbox Fundamentals
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/html-css/css-i/flexbox/flexbox-in-practice/" class="md-nav__link">
+        Flexbox In Practice
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_6" type="checkbox" id="__nav_2_6">
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_6">
+          CSS II
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="CSS II" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_6">
+          <span class="md-nav__icon md-icon"></span>
+          CSS II
+        </label>
+        <ul class="md-nav__list">
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/html-css/css-ii/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/html-css/css-ii/media-queries/" class="md-nav__link">
+        Media Queries
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/html-css/css-ii/bootstrap-introduction/" class="md-nav__link">
+        Bootstrap Introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/html-css/css-ii/bootstrap-grid-system/" class="md-nav__link">
+        Bootstrap Grid System
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3">
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          JavaScript I
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="JavaScript I" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          JavaScript I
+        </label>
+        <ul class="md-nav__list">
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/javascript-i/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2">
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2">
+          Introduction
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Introduction" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          Introduction
+        </label>
+        <ul class="md-nav__list">
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/javascript-i/introduction/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/javascript-i/introduction/primitive-types/" class="md-nav__link">
+        Primitive Types
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/javascript-i/introduction/operators/" class="md-nav__link">
+        Operators
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/javascript-i/introduction/variables/" class="md-nav__link">
+        Variables
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/javascript-i/introduction/working-with-data-types-operators-and-variables/" class="md-nav__link">
+        Working With Data Types, Operators, and Variables
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/javascript-i/javascript-with-html/" class="md-nav__link">
+        JavaScript with HTML
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/javascript-i/functions/" class="md-nav__link">
+        Functions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/javascript-i/conditionals/" class="md-nav__link">
+        Conditionals
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/javascript-i/testing-user-functions/" class="md-nav__link">
+        Intro to Unit Testing
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/javascript-i/loops/" class="md-nav__link">
+        Loops
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_8" type="checkbox" id="__nav_3_8">
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_8">
+          Arrays
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Arrays" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_8">
+          <span class="md-nav__icon md-icon"></span>
+          Arrays
+        </label>
+        <ul class="md-nav__list">
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/javascript-i/arrays/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/javascript-i/arrays/manipulating/" class="md-nav__link">
+        Manipulating
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_9" type="checkbox" id="__nav_3_9">
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_9">
+          Objects
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Objects" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_9">
+          <span class="md-nav__icon md-icon"></span>
+          Objects
+        </label>
+        <ul class="md-nav__list">
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/javascript-i/objects/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/javascript-i/objects/math/" class="md-nav__link">
+        Math
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_10" type="checkbox" id="__nav_3_10">
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_10">
+          BOM and DOM
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="BOM and DOM" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_10">
+          <span class="md-nav__icon md-icon"></span>
+          BOM and DOM
+        </label>
+        <ul class="md-nav__list">
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/javascript-i/bom-and-dom/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/javascript-i/bom-and-dom/bom/" class="md-nav__link">
+        Browser Object Model
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/javascript-i/bom-and-dom/dom/" class="md-nav__link">
+        Document Object Model
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/javascript-i/bom-and-dom/dom-events/" class="md-nav__link">
+        DOM Events
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/javascript-i/coffee-project/" class="md-nav__link">
+        Coffee Project
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4">
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          jQuery
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="jQuery" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          jQuery
+        </label>
+        <ul class="md-nav__list">
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/jquery/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/jquery/introduction/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/jquery/selectors/" class="md-nav__link">
+        Selectors
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4" type="checkbox" id="__nav_4_4">
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_4">
+          Events
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Events" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_4">
+          <span class="md-nav__icon md-icon"></span>
+          Events
+        </label>
+        <ul class="md-nav__list">
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/jquery/events/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/jquery/events/mouse-events/" class="md-nav__link">
+        Mouse Events
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/jquery/events/keyboard-events/" class="md-nav__link">
+        Keyboard Events
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_5" type="checkbox" id="__nav_4_5">
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_5">
+          Essential Methods
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Essential Methods" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_5">
+          <span class="md-nav__icon md-icon"></span>
+          Essential Methods
+        </label>
+        <ul class="md-nav__list">
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/jquery/essential-methods/attributes-and-css/" class="md-nav__link">
+        Attributes And CSS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/jquery/essential-methods/traversing/" class="md-nav__link">
+        Traversing
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_6" type="checkbox" id="__nav_4_6">
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_6">
+          Ajax Requests
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Ajax Requests" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_6">
+          <span class="md-nav__icon md-icon"></span>
+          Ajax Requests
+        </label>
+        <ul class="md-nav__list">
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/jquery/ajax/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/jquery/ajax/requests-and-responses/" class="md-nav__link">
+        Requests and Responses
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/jquery/mapbox-api/" class="md-nav__link">
+        Mapbox API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/jquery/ajax/weather-map/" class="md-nav__link">
+        Weather Map Project
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/jquery/personal-site/" class="md-nav__link">
+        Personal Site
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5">
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          JavaScript II
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="JavaScript II" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          JavaScript II
+        </label>
+        <ul class="md-nav__list">
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/javascript-ii/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/javascript-ii/es6/" class="md-nav__link">
+        es6
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/javascript-ii/map-filter-reduce/" class="md-nav__link">
+        Map, Filter, and Reduce
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/javascript-ii/promises/" class="md-nav__link">
+        Promises
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/javascript-ii/RESTful-api/" class="md-nav__link">
+        RESTful API Requests
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6">
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          Java I
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Java I" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Java I
+        </label>
+        <ul class="md-nav__list">
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/java-i/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/java-i/introduction-to-java/" class="md-nav__link">
+        Introduction To Java
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/java-i/syntax-types-and-variables/" class="md-nav__link">
+        Syntax, Types, and Variables
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/java-i/console-io/" class="md-nav__link">
+        Console IO
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/java-i/control-statements-and-loops/" class="md-nav__link">
+        Control Statements and Loops
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/java-i/strings/" class="md-nav__link">
+        Strings
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/java-i/methods/" class="md-nav__link">
+        Methods
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" checked="">
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7">
+          Java II
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Java II" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          Java II
+        </label>
+        <ul class="md-nav__list">
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/java-ii/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Object Oriented Programming
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="https://java.codeup.com/java-ii/object-oriented-programming/" class="md-nav__link md-nav__link--active">
+        Object Oriented Programming
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc">
+      
+        <li class="md-nav__item">
+  <a href="https://java.codeup.com/java-ii/object-oriented-programming/#classes-and-objects" class="md-nav__link md-nav__link--passed">
+    Classes And Objects
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="https://java.codeup.com/java-ii/object-oriented-programming/#static-vs-instance" class="md-nav__link md-nav__link--passed">
+    Static vs Instance
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="https://java.codeup.com/java-ii/object-oriented-programming/#constructors" class="md-nav__link md-nav__link--passed">
+    Constructors
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="https://java.codeup.com/java-ii/object-oriented-programming/#the-this-keyword" class="md-nav__link md-nav__link--passed md-nav__link--active">
+    The this Keyword
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="https://java.codeup.com/java-ii/object-oriented-programming/#visibility" class="md-nav__link">
+    Visibility
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="https://java.codeup.com/java-ii/object-oriented-programming/#further-reading" class="md-nav__link">
+    Further Reading
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="https://java.codeup.com/java-ii/object-oriented-programming/#exercises" class="md-nav__link">
+    Exercises
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/java-ii/arrays/" class="md-nav__link">
+        Arrays
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/java-ii/inheritance-and-polymorphism/" class="md-nav__link">
+        Inheritance and Polymorphism
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/java-ii/interfaces-and-abstract-classes/" class="md-nav__link">
+        Interfaces and Abstract Classes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/java-ii/collections/" class="md-nav__link">
+        Collections
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/java-ii/annotations/" class="md-nav__link">
+        Annotations
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/java-ii/exceptions-and-error-handling/" class="md-nav__link">
+        Exceptions and Error Handling
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/java-ii/file-io/" class="md-nav__link">
+        File I/O
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/java-ii/dependency-management/" class="md-nav__link">
+        Dependency Management
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/java-ii/junit-tdd/" class="md-nav__link">
+        Testing Code with JUnit
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8">
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8">
+          MySQL
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="MySQL" data-md-level="1">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
+          MySQL
+        </label>
+        <ul class="md-nav__list">
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/mysql/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/mysql/introduction/" class="md-nav__link">
+        Introduction to MySQL
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/mysql/users/" class="md-nav__link">
+        Users
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/mysql/databases/" class="md-nav__link">
+        Databases
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/mysql/tables/" class="md-nav__link">
+        Tables
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/mysql/basic-statements/" class="md-nav__link">
+        Basic Statements
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/mysql/sample-database/" class="md-nav__link">
+        Setting Up Sample DB
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/mysql/intellij/" class="md-nav__link">
+        IntelliJ Setup
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_9" type="checkbox" id="__nav_8_9">
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8_9">
+          MySQL Clauses
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="MySQL Clauses" data-md-level="2">
+        <label class="md-nav__title" for="__nav_8_9">
+          <span class="md-nav__icon md-icon"></span>
+          MySQL Clauses
+        </label>
+        <ul class="md-nav__list">
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/mysql/clauses/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/mysql/clauses/where/" class="md-nav__link">
+        Where
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/mysql/clauses/order-by/" class="md-nav__link">
+        Order By
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/mysql/clauses/limit/" class="md-nav__link">
+        Limit
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/mysql/functions/" class="md-nav__link">
+        Functions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/mysql/group-by/" class="md-nav__link">
+        Group By
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/mysql/aliases/" class="md-nav__link">
+        Aliases
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_13" type="checkbox" id="__nav_8_13">
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8_13">
+          Relationships
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Relationships" data-md-level="2">
+        <label class="md-nav__title" for="__nav_8_13">
+          <span class="md-nav__icon md-icon"></span>
+          Relationships
+        </label>
+        <ul class="md-nav__list">
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/mysql/relationships/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/mysql/relationships/indexes/" class="md-nav__link">
+        Indexes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/mysql/relationships/joins/" class="md-nav__link">
+        Joins
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/mysql/relationships/sub-queries/" class="md-nav__link">
+        Sub-Queries
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/mysql/database-design/" class="md-nav__link">
+        Database Design
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9">
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_9">
+          Java III
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Java III" data-md-level="1">
+        <label class="md-nav__title" for="__nav_9">
+          <span class="md-nav__icon md-icon"></span>
+          Java III
+        </label>
+        <ul class="md-nav__list">
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/java-iii/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/java-iii/servlets/" class="md-nav__link">
+        Servlets
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/java-iii/jsp-and-jstl/" class="md-nav__link">
+        JSP and JSTL
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_4" type="checkbox" id="__nav_9_4">
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_9_4">
+          MVC
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="MVC" data-md-level="2">
+        <label class="md-nav__title" for="__nav_9_4">
+          <span class="md-nav__icon md-icon"></span>
+          MVC
+        </label>
+        <ul class="md-nav__list">
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/java-iii/mvc/introduction/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/java-iii/mvc/servlets-with-jsps/" class="md-nav__link">
+        Servlets with JSPs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/java-iii/mvc/java-beans/" class="md-nav__link">
+        JavaBeans
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/java-iii/mvc/accessing-data/" class="md-nav__link">
+        Accessing Data
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/java-iii/sessions-and-cookies/" class="md-nav__link">
+        Sessions and Cookies
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/java-iii/jdbc/" class="md-nav__link">
+        JDBC
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/java-iii/user-input/" class="md-nav__link">
+        User Input
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/java-iii/passwords/" class="md-nav__link">
+        Passwords
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/java-iii/finish-the-adlister/" class="md-nav__link">
+        Finish The Adlister
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10" type="checkbox" id="__nav_10">
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_10">
+          Spring
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Spring" data-md-level="1">
+        <label class="md-nav__title" for="__nav_10">
+          <span class="md-nav__icon md-icon"></span>
+          Spring
+        </label>
+        <ul class="md-nav__list">
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/spring/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/spring/setup/" class="md-nav__link">
+        Setup
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_3" type="checkbox" id="__nav_10_3">
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_10_3">
+          Fundamentals
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Fundamentals" data-md-level="2">
+        <label class="md-nav__title" for="__nav_10_3">
+          <span class="md-nav__icon md-icon"></span>
+          Fundamentals
+        </label>
+        <ul class="md-nav__list">
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/spring/fundamentals/controllers/" class="md-nav__link">
+        Controllers
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/spring/fundamentals/views/" class="md-nav__link">
+        Views
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/spring/fundamentals/repositories/" class="md-nav__link">
+        Repositories and JPA
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/spring/fundamentals/relationships/" class="md-nav__link">
+        Relationships
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/spring/fundamentals/form-model-binding/" class="md-nav__link">
+        Form Model Binding
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/spring/fundamentals/services/" class="md-nav__link">
+        Services
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_3_7" type="checkbox" id="__nav_10_3_7">
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_10_3_7">
+          Security
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Security" data-md-level="3">
+        <label class="md-nav__title" for="__nav_10_3_7">
+          <span class="md-nav__icon md-icon"></span>
+          Security
+        </label>
+        <ul class="md-nav__list">
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/spring/fundamentals/security/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/spring/fundamentals/security/authentication/" class="md-nav__link">
+        Authentication
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/spring/fundamentals/integration-tests/" class="md-nav__link">
+        Integration Tests
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_4" type="checkbox" id="__nav_10_4">
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_10_4">
+          Extra Features
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Extra Features" data-md-level="2">
+        <label class="md-nav__title" for="__nav_10_4">
+          <span class="md-nav__icon md-icon"></span>
+          Extra Features
+        </label>
+        <ul class="md-nav__list">
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/spring/extra-features/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/spring/extra-features/form-validation/" class="md-nav__link">
+        Validation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/spring/extra-features/error-pages/" class="md-nav__link">
+        Custom Error Pages
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/spring/extra-features/json-response/" class="md-nav__link">
+        JSON
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/spring/extra-features/file-upload/" class="md-nav__link">
+        File Upload
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11" type="checkbox" id="__nav_11">
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_11">
+          Capstone Project
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Capstone Project" data-md-level="1">
+        <label class="md-nav__title" for="__nav_11">
+          <span class="md-nav__icon md-icon"></span>
+          Capstone Project
+        </label>
+        <ul class="md-nav__list">
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/capstone/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/capstone/sw-project-planning/" class="md-nav__link">
+        Software Project Planning
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/capstone/workbook/" class="md-nav__link">
+        Capstone Workbook
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/capstone/repo-doc/" class="md-nav__link">
+        Documentation
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12" type="checkbox" id="__nav_12">
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_12">
+          Appendix
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Appendix" data-md-level="1">
+        <label class="md-nav__title" for="__nav_12">
+          <span class="md-nav__icon md-icon"></span>
+          Appendix
+        </label>
+        <ul class="md-nav__list">
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/appendix/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/appendix/pair-programming/" class="md-nav__link">
+        Pair Programming
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_3" type="checkbox" id="__nav_12_3">
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_12_3">
+          Professional Development
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Professional Development" data-md-level="2">
+        <label class="md-nav__title" for="__nav_12_3">
+          <span class="md-nav__icon md-icon"></span>
+          Professional Development
+        </label>
+        <ul class="md-nav__list">
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/appendix/professional-development/professionalism-101/" class="md-nav__link">
+        Professionalism 101
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/appendix/professional-development/professional-resume/" class="md-nav__link">
+        Professional Resume
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/appendix/professional-development/cover-letter/" class="md-nav__link">
+        Cover Letters
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/appendix/professional-development/virtual-meetings/" class="md-nav__link">
+        Virtual Meeting Tips and Tricks
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/appendix/professional-development/mock-behavioral-questions/" class="md-nav__link">
+        Mock Behavioral Questions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/appendix/professional-development/linkedin-tips/" class="md-nav__link">
+        LinkedIn Tips
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/appendix/professional-development/tech-talk/" class="md-nav__link">
+        Tech Talks
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/appendix/professional-development/email-setup/" class="md-nav__link">
+        Email Setup
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/appendix/professional-development/offer-letters/" class="md-nav__link">
+        Offer Letters
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/appendix/professional-development/job-search-workshop/" class="md-nav__link">
+        Job Search
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/appendix/professional-development/post-interview-review-form/" class="md-nav__link">
+        Post Interview Review Form
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_4" type="checkbox" id="__nav_12_4">
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_12_4">
+          Git
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Git" data-md-level="2">
+        <label class="md-nav__title" for="__nav_12_4">
+          <span class="md-nav__icon md-icon"></span>
+          Git
+        </label>
+        <ul class="md-nav__list">
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/appendix/git/intellij-intro/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/appendix/git/intellij/" class="md-nav__link">
+        IntelliJ Walkthrough
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/appendix/git/cli/" class="md-nav__link">
+        CLI Walkthrough
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/appendix/git/branching/" class="md-nav__link">
+        Branching
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/appendix/git/working-in-teams/" class="md-nav__link">
+        Teamwork
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/appendix/git/merge-conflict-demo/" class="md-nav__link">
+        Merge Conflicts
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_5" type="checkbox" id="__nav_12_5">
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_12_5">
+          Code Standards
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Code Standards" data-md-level="2">
+        <label class="md-nav__title" for="__nav_12_5">
+          <span class="md-nav__icon md-icon"></span>
+          Code Standards
+        </label>
+        <ul class="md-nav__list">
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/appendix/code-standards/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/appendix/code-standards/html-css/" class="md-nav__link">
+        HTML and CSS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/appendix/code-standards/javascript/" class="md-nav__link">
+        JavaScript
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/appendix/code-standards/mysql/" class="md-nav__link">
+        MySQL
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/appendix/code-standards/java/" class="md-nav__link">
+        Java
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_6" type="checkbox" id="__nav_12_6">
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_12_6">
+          Extra Challenges
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Extra Challenges" data-md-level="2">
+        <label class="md-nav__title" for="__nav_12_6">
+          <span class="md-nav__icon md-icon"></span>
+          Extra Challenges
+        </label>
+        <ul class="md-nav__list">
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/appendix/extra-challenges/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/appendix/extra-challenges/basic-challenges/" class="md-nav__link">
+        General Coding Challenges
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_6_3" type="checkbox" id="__nav_12_6_3">
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_12_6_3">
+          Questions from the Coding Challenge Meetup
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Questions from the Coding Challenge Meetup" data-md-level="3">
+        <label class="md-nav__title" for="__nav_12_6_3">
+          <span class="md-nav__icon md-icon"></span>
+          Questions from the Coding Challenge Meetup
+        </label>
+        <ul class="md-nav__list">
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/appendix/coding-challenges/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/appendix/coding-challenges/amateur/" class="md-nav__link">
+        Amateur
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/appendix/coding-challenges/intermediate/" class="md-nav__link">
+        Intermediate
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/appendix/coding-challenges/professional/" class="md-nav__link">
+        Professional
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/appendix/extra-challenges/css-practice/" class="md-nav__link">
+        CSS Challenges
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/javascript-i/bom-and-dom/calculator/" class="md-nav__link">
+        JavaScript Calculator
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/jquery/whack-a-mole/create-game/" class="md-nav__link">
+        Whack a Mole Game
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/appendix/extra-challenges/website-status-page/" class="md-nav__link">
+        Website Status Page
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/appendix/extra-challenges/memory-game/" class="md-nav__link">
+        Memory Game
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/jquery/simple-simon/" class="md-nav__link">
+        Simple Simon Game
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/appendix/extra-challenges/locations/" class="md-nav__link">
+        Incidents Map
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/appendix/extra-challenges/trains/" class="md-nav__link">
+        Travel Distance Calculation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/appendix/extra-challenges/sales-tax/" class="md-nav__link">
+        Sales Tax
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/appendix/extra-challenges/mars-rover/" class="md-nav__link">
+        Mars Rover
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/appendix/extra-challenges/pdf-parser/" class="md-nav__link">
+        PDF Parser
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/appendix/extra-challenges/beef-up-your-blog/" class="md-nav__link">
+        Beef Up Your Blog
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/appendix/extra-challenges/facebook-clone/" class="md-nav__link">
+        Facebook Clone
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/appendix/extra-challenges/java-file-io-extras/" class="md-nav__link">
+        Java File IO Extras
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_7" type="checkbox" id="__nav_12_7">
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_12_7">
+          Command Line
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Command Line" data-md-level="2">
+        <label class="md-nav__title" for="__nav_12_7">
+          <span class="md-nav__icon md-icon"></span>
+          Command Line
+        </label>
+        <ul class="md-nav__list">
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/prework/cli/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/prework/cli/01-intro/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/prework/cli/02-listing-files/" class="md-nav__link">
+        Listing Files
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/prework/cli/03-file-paths/" class="md-nav__link">
+        File Paths
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/prework/cli/04-navigating-the-filesystem/" class="md-nav__link">
+        Navigating the File System
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/prework/cli/05-creating-files-and-directories/" class="md-nav__link">
+        Creating Files and Directories
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/prework/cli/06-moving-files/" class="md-nav__link">
+        Moving Files
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_8" type="checkbox" id="__nav_12_8">
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_12_8">
+          Further Reading
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Further Reading" data-md-level="2">
+        <label class="md-nav__title" for="__nav_12_8">
+          <span class="md-nav__icon md-icon"></span>
+          Further Reading
+        </label>
+        <ul class="md-nav__list">
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_8_1" type="checkbox" id="__nav_12_8_1">
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_12_8_1">
+          HTML/CSS
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="HTML/CSS" data-md-level="3">
+        <label class="md-nav__title" for="__nav_12_8_1">
+          <span class="md-nav__icon md-icon"></span>
+          HTML/CSS
+        </label>
+        <ul class="md-nav__list">
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/html-css/css-i/css-resets/" class="md-nav__link">
+        CSS Reset
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/appendix/further-reading/html-css/flexbox-additional-concepts/" class="md-nav__link">
+        Additional Flexbox Features
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/appendix/further-reading/html-css/css-grid-additional-features/" class="md-nav__link">
+        Additional CSS Grid Features
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_8_1_4" type="checkbox" id="__nav_12_8_1_4">
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_12_8_1_4">
+          CSS Grid
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="CSS Grid" data-md-level="4">
+        <label class="md-nav__title" for="__nav_12_8_1_4">
+          <span class="md-nav__icon md-icon"></span>
+          CSS Grid
+        </label>
+        <ul class="md-nav__list">
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/html-css/css-i/grid/css-grid-intro/" class="md-nav__link">
+        Intro to CSS Grid
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/html-css/css-i/grid/css-grid-fundamentals/" class="md-nav__link">
+        CSS Grid Fundamentals
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/html-css/css-i/grid/css-grid-in-practice/" class="md-nav__link">
+        CSS Grid In Practice
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_8_2" type="checkbox" id="__nav_12_8_2">
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_12_8_2">
+          Javascript
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Javascript" data-md-level="3">
+        <label class="md-nav__title" for="__nav_12_8_2">
+          <span class="md-nav__icon md-icon"></span>
+          Javascript
+        </label>
+        <ul class="md-nav__list">
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/appendix/further-reading/javascript/hoisting/" class="md-nav__link">
+        Hoisting in Javascript
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/appendix/further-reading/javascript/array-splice/" class="md-nav__link">
+        Array Splice
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/appendix/further-reading/javascript/this/" class="md-nav__link">
+        The this keyword
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_8_2_4" type="checkbox" id="__nav_12_8_2_4">
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_12_8_2_4">
+          Angular
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Angular" data-md-level="4">
+        <label class="md-nav__title" for="__nav_12_8_2_4">
+          <span class="md-nav__icon md-icon"></span>
+          Angular
+        </label>
+        <ul class="md-nav__list">
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/appendix/angular/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/appendix/angular/templating/" class="md-nav__link">
+        Expressions and Directives
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/appendix/angular/models/" class="md-nav__link">
+        Models
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/appendix/angular/controllers/" class="md-nav__link">
+        Controllers
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/appendix/angular/dependencies/" class="md-nav__link">
+        Dependencies and Services
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/javascript-ii/npm/" class="md-nav__link">
+        npm
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/javascript-ii/modules/" class="md-nav__link">
+        Modules
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/appendix/further-reading/jquery/effects/" class="md-nav__link">
+        jQuery Effects
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_8_3" type="checkbox" id="__nav_12_8_3">
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_12_8_3">
+          MySQL
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="MySQL" data-md-level="3">
+        <label class="md-nav__title" for="__nav_12_8_3">
+          <span class="md-nav__icon md-icon"></span>
+          MySQL
+        </label>
+        <ul class="md-nav__list">
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/appendix/extra-challenges/mysql/mysql-extra-exercises/" class="md-nav__link">
+        Extra Exercises
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/appendix/further-reading/mysql/host-wildcards/" class="md-nav__link">
+        Host Wildcards
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_8_4" type="checkbox" id="__nav_12_8_4">
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_12_8_4">
+          Java
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Java" data-md-level="3">
+        <label class="md-nav__title" for="__nav_12_8_4">
+          <span class="md-nav__icon md-icon"></span>
+          Java
+        </label>
+        <ul class="md-nav__list">
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/appendix/further-reading/java/intellij-tomcat-configuration/" class="md-nav__link">
+        IntelliJ Servlet Application Configuration
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_8_5" type="checkbox" id="__nav_12_8_5">
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_12_8_5">
+          Spring
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Spring" data-md-level="3">
+        <label class="md-nav__title" for="__nav_12_8_5">
+          <span class="md-nav__icon md-icon"></span>
+          Spring
+        </label>
+        <ul class="md-nav__list">
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/appendix/further-reading/spring/pagination/" class="md-nav__link">
+        Pagination
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/appendix/further-reading/spring/authorization/" class="md-nav__link">
+        Authorization
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/appendix/further-reading/spring/security-use-cases/" class="md-nav__link">
+        Security Use Cases
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/appendix/further-reading/spring/seeder/" class="md-nav__link">
+        Create A Database Seeder
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/appendix/further-reading/spring/devtools-configuration/" class="md-nav__link">
+        Devtools
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_9" type="checkbox" id="__nav_12_9">
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_12_9">
+          Web Design
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Web Design" data-md-level="2">
+        <label class="md-nav__title" for="__nav_12_9">
+          <span class="md-nav__icon md-icon"></span>
+          Web Design
+        </label>
+        <ul class="md-nav__list">
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/web-design/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/web-design/intro/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_9_3" type="checkbox" id="__nav_12_9_3">
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_12_9_3">
+          UI
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="UI" data-md-level="3">
+        <label class="md-nav__title" for="__nav_12_9_3">
+          <span class="md-nav__icon md-icon"></span>
+          UI
+        </label>
+        <ul class="md-nav__list">
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/web-design/ui/typography/" class="md-nav__link">
+        Typography
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/web-design/ui/color/" class="md-nav__link">
+        Color Theory
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/web-design/ui/visuals/" class="md-nav__link">
+        Visual Communication
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_9_4" type="checkbox" id="__nav_12_9_4">
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_12_9_4">
+          UX
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="UX" data-md-level="3">
+        <label class="md-nav__title" for="__nav_12_9_4">
+          <span class="md-nav__icon md-icon"></span>
+          UX
+        </label>
+        <ul class="md-nav__list">
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/web-design/ux/purpose/" class="md-nav__link">
+        Purpose
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/web-design/ux/layout/" class="md-nav__link">
+        Layout
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/appendix/slides/" class="md-nav__link">
+        Slideshows
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://java.codeup.com/javascript-i/google-maps-api/" class="md-nav__link">
+        Google Maps API
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc">
+      
+        <li class="md-nav__item">
+  <a href="https://java.codeup.com/java-ii/object-oriented-programming/#classes-and-objects" class="md-nav__link md-nav__link--passed">
+    Classes And Objects
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="https://java.codeup.com/java-ii/object-oriented-programming/#static-vs-instance" class="md-nav__link md-nav__link--passed">
+    Static vs Instance
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="https://java.codeup.com/java-ii/object-oriented-programming/#constructors" class="md-nav__link md-nav__link--passed">
+    Constructors
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="https://java.codeup.com/java-ii/object-oriented-programming/#the-this-keyword" class="md-nav__link md-nav__link--passed md-nav__link--active">
+    The this Keyword
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="https://java.codeup.com/java-ii/object-oriented-programming/#visibility" class="md-nav__link">
+    Visibility
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="https://java.codeup.com/java-ii/object-oriented-programming/#further-reading" class="md-nav__link">
+    Further Reading
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="https://java.codeup.com/java-ii/object-oriented-programming/#exercises" class="md-nav__link">
+    Exercises
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="object-oriented-programming">Object Oriented Programming</h1>
+<p>In this lesson, we'll discuss Classes and Objects; as well as, how to create and use: objects, static and instance fields, constructors, and visibility.</p>
+<p>You've been using object-oriented concepts this whole time, such as the <code>Math</code>
+class, which is built in to the Java language and contains static methods and
+fields, and the <code>Scanner</code> class, which we've created instances of to get
+command line input from a user. Now, we'll explore, in more depth, the concepts
+underpinning how we've been using these classes.</p>
+<p>Eventually we'll encounter:</p>
+<ul>
+<li>Objects that represent application entities whose properties map to database
+  tables.</li>
+<li>Utility classes with static methods that hash passwords.</li>
+<li>Objects that represent a database connection.</li>
+<li>Objects that have a field that is a database connection object that talks to
+  the database.</li>
+<li>Classes with static methods that create database connections.</li>
+</ul>
+<p>But for now, we need to learn the fundamentals of how objects work.</p>
+<h2 id="classes-and-objects">Classes And Objects</h2>
+<p>Before we dive into looking at Java code, let's start with a few definitions:</p>
+<ul>
+<li>
+<p>A <strong>class</strong> is used to define a custom type in Java.</p>
+<p>You can think of a class as a template, or a blueprint, for objects that will
+be created based on it.</p>
+</li>
+<li>
+<p>A <strong>field</strong> is a variable or method that belongs to an object or a class.</p>
+<p>Fields are accessed with the <code>.</code> operator. By default, fields belong to
+objects, but can be defined as belonging to a class with the <code>static</code>
+keyword. Fields are either properties (variables) or methods (functions).</p>
+</li>
+<li>
+<p>An <strong>object</strong> is an <em>instance</em> of a class.</p>
+<p>Objects have fields and methods, and are <em>instantiated</em>, i.e. created,
+with the <code>new</code> keyword.</p>
+</li>
+</ul>
+<p>Let's look at an example of defining a <code>Person</code> class and creating an instance
+of it.</p>
+<div class="highlight"><pre id="__code_1"><span></span><button class="md-clipboard md-icon" title="Copy to clipboard" data-clipboard-target="#__code_1 &gt; code"></button><code><span class="kd">class</span> <span class="nc">Person</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">firstName</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">lastName</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="nf">sayHello</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">String</span><span class="p">.</span><span class="na">format</span><span class="p">(</span><span class="s">"Hello from %s %s!"</span><span class="p">,</span><span class="w"> </span><span class="n">firstName</span><span class="p">,</span><span class="w"> </span><span class="n">lastName</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">Person</span><span class="w"> </span><span class="n">rick</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Person</span><span class="p">();</span><span class="w"></span>
+<span class="w">        </span><span class="n">rick</span><span class="p">.</span><span class="na">firstName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Rick"</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">rick</span><span class="p">.</span><span class="na">lastName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Sanchez"</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">rick</span><span class="p">.</span><span class="na">sayHello</span><span class="p">());</span><span class="w"></span>
+<span class="w">        </span><span class="c1">// prints "Hello from Rick Sanchez!"</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<p>Here we define a class named <code>Person</code> with two <em>instance variables</em>, or
+fields, <code>firstName</code> and <code>lastName</code>. The class also defines an <em>instance
+method</em>, <code>sayHello</code>.</p>
+<p>Notice that in the <code>sayHello</code> method we can refer to <code>firstName</code> and <code>lastName</code>,
+despite them having variables with those names defined in the method. If we had
+defined a variable with the same name as a field, any references would refer
+to the variables, not the field.</p>
+<p>Inside of the main method, we create an instance of our <code>Person</code> class. Notice
+that we are now able to define a variable with a type of <code>Person</code>. We use the
+<code>new</code> keyword, along with the name of the class, followed by an empty set of
+parenthesis to create the instance.</p>
+<p>We then assign values to the object's <code>firstName</code> and <code>lastName</code> fields, then
+call the <code>sayHello</code> method and print the message it returns.</p>
+<h2 id="static-vs-instance">Static vs Instance</h2>
+<p>We said that fields can belong either to a class or an object. So far we've only
+seen examples of instance fields: fields that belong to an instance (as
+opposed to a class). What this means is that each object can have different
+values for their instance fields. For example, each person can have a different
+first name and last name.</p>
+<div class="highlight"><pre id="__code_2"><span></span><button class="md-clipboard md-icon" title="Copy to clipboard" data-clipboard-target="#__code_2 &gt; code"></button><code><span class="n">Person</span><span class="w"> </span><span class="n">ada</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Person</span><span class="p">();</span><span class="w"></span>
+<span class="n">ada</span><span class="p">.</span><span class="na">firstName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Ada"</span><span class="p">;</span><span class="w"></span>
+<span class="n">ada</span><span class="p">.</span><span class="na">lastName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Lovelace"</span><span class="p">;</span><span class="w"></span>
+
+<span class="n">Person</span><span class="w"> </span><span class="n">grace</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Person</span><span class="p">();</span><span class="w"></span>
+<span class="n">grace</span><span class="p">.</span><span class="na">firstName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Grace"</span><span class="p">;</span><span class="w"></span>
+<span class="n">grace</span><span class="p">.</span><span class="na">lastName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Hopper"</span><span class="p">;</span><span class="w"></span>
+
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">ada</span><span class="p">.</span><span class="na">sayHello</span><span class="p">());</span><span class="w">   </span><span class="c1">// "Hello from Ada Lovelace!"</span><span class="w"></span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">grace</span><span class="p">.</span><span class="na">sayHello</span><span class="p">());</span><span class="w"> </span><span class="c1">// "Hello from Grace Hopper!"</span><span class="w"></span>
+</code></pre></div>
+<p>In the above example, each instance of the <code>Person</code> class has a different value
+for each of the <code>firstName</code> and <code>lastName</code> fields, but they both have
+fields named <code>firstName</code> and <code>lastName</code>.</p>
+<p>In contrast to instance fields are <em>static fields</em>, those that belong to a class
+as a whole. Static fields are accessible through the class itself. In other words, 
+they are accessible without creating an instance of the class.</p>
+<p>Let's take a look at a simple example of referencing a static field on a class:</p>
+<div class="highlight"><pre id="__code_3"><span></span><button class="md-clipboard md-icon" title="Copy to clipboard" data-clipboard-target="#__code_3 &gt; code"></button><code><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">Math</span><span class="p">.</span><span class="na">PI</span><span class="p">);</span><span class="w"> </span><span class="c1">// 3.141592653589793</span><span class="w"></span>
+</code></pre></div>
+<p>Notice that we didn't need to write any code that instantiates the <code>Math</code> class,
+we simply add a <code>.</code> after the class name and refer to the static field.</p>
+<p>Static fields are defined with the <code>static</code> keyword, and are shared by all
+instances of the class, meaning that static fields should not be
+anything that is supposed to be unique to instances of the class. Instead, they
+should contain information that all instances will use, or methods and
+fields that are meant to be accessed only statically. We'll take a look at
+examples of both cases.</p>
+<div class="admonition warning">
+<p>Static fields can be referenced by instance methods. But instance
+fields <strong>cannot</strong> be referenced in a static context.</p>
+</div>
+<div class="highlight"><pre id="__code_4"><span></span><button class="md-clipboard md-icon" title="Copy to clipboard" data-clipboard-target="#__code_4 &gt; code"></button><code><span class="kd">class</span> <span class="nc">Arithmetic</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// static property</span><span class="w"></span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">pi</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">3.14159</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="c1">// static methods</span><span class="w"></span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">add</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">y</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">y</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">multiply</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">y</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">y</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<div class="highlight"><pre id="__code_5"><span></span><button class="md-clipboard md-icon" title="Copy to clipboard" data-clipboard-target="#__code_5 &gt; code"></button><code><span class="kd">class</span> <span class="nc">MathTest</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">Arithmetic</span><span class="p">.</span><span class="na">pi</span><span class="p">;</span><span class="w"> </span><span class="c1">// 3.14159</span><span class="w"></span>
+
+<span class="w">        </span><span class="n">Arithmetic</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">);</span><span class="w">      </span><span class="c1">// 10</span><span class="w"></span>
+<span class="w">        </span><span class="n">Arithmetic</span><span class="p">.</span><span class="na">multiply</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">);</span><span class="w"> </span><span class="c1">// 25</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<p>In the example above, the <code>Arithmetic</code> class is only meant to be referenced
+statically, meaning that we never create instances of it; we just refer to the
+methods and fields through the class name.</p>
+<p>Now let's look at an example of a class with both static and instance
+fields:</p>
+<div class="highlight"><pre id="__code_6"><span></span><button class="md-clipboard md-icon" title="Copy to clipboard" data-clipboard-target="#__code_6 &gt; code"></button><code><span class="kd">class</span> <span class="nc">Person</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">worldPopulation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">7_500_000_000L</span><span class="p">;</span><span class="w"> </span><span class="c1">// class property</span><span class="w"></span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="p">;</span><span class="w"> </span><span class="c1">// instance property</span><span class="w"></span>
+
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">Person</span><span class="w"> </span><span class="n">theBestDrummerAlive</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Person</span><span class="p">();</span><span class="w"></span>
+<span class="w">        </span><span class="n">theBestDrummerAlive</span><span class="p">.</span><span class="na">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Neil Peart"</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">        </span><span class="n">Person</span><span class="p">.</span><span class="na">worldPopulation</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="c1">// accessing a static property</span><span class="w"></span>
+
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">Person</span><span class="p">.</span><span class="na">worldPopulation</span><span class="p">);</span><span class="w"> </span><span class="c1">// 7500000001</span><span class="w"></span>
+
+<span class="w">        </span><span class="c1">// technically this will work, but it is usually better to reference</span><span class="w"></span>
+<span class="w">        </span><span class="c1">// static properties through the class, not instances</span><span class="w"></span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">theBestDrummerAlive</span><span class="p">.</span><span class="na">worldPopulation</span><span class="p">);</span><span class="w"> </span><span class="c1">// 7500000001</span><span class="w"></span>
+
+<span class="w">        </span><span class="c1">// DONT DO THIS, it will not compile</span><span class="w"></span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">Person</span><span class="p">.</span><span class="na">name</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<ul>
+<li>Each person has a different name, but the world population is the same for all
+  people.</li>
+<li>You cannot access an instance variable in a static context (only individual
+  people have names, not people in general).</li>
+</ul>
+<h2 id="constructors">Constructors</h2>
+<p>A <strong>constructor</strong> is a special method that is called when an object is
+created. A constructor has the same name as the class and does not define a
+return type. Constructors, like any other method, can accept arguments and be
+overloaded.</p>
+<div class="highlight"><pre id="__code_7"><span></span><button class="md-clipboard md-icon" title="Copy to clipboard" data-clipboard-target="#__code_7 &gt; code"></button><code><span class="kd">class</span> <span class="nc">Person</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="c1">// the Person constructor</span><span class="w"></span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="nf">Person</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"A Person is being created!"</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">Person</span><span class="w"> </span><span class="n">p1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Person</span><span class="p">();</span><span class="w"></span>
+<span class="w">        </span><span class="n">Person</span><span class="w"> </span><span class="n">p2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Person</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<p>The above code will print out:</p>
+<div class="highlight"><pre id="__code_8"><span></span><button class="md-clipboard md-icon" title="Copy to clipboard" data-clipboard-target="#__code_8 &gt; code"></button><code>A Person is being created!
+A Person is being created!
+</code></pre></div>
+<p>because the constructor is called whenever we use the <code>new</code> keyword to create an
+instance of the class.</p>
+<p>A common use case for constructors is to set, or provide default values for, an
+object's fields:</p>
+<div class="highlight"><pre id="__code_9"><span></span><button class="md-clipboard md-icon" title="Copy to clipboard" data-clipboard-target="#__code_9 &gt; code"></button><code><span class="kd">class</span> <span class="nc">Student</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">cohort</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="nf">Student</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">studentName</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">studentName</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">cohort</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Unassigned"</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="nf">Student</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">studentName</span><span class="p">,</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">assignedCohort</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">studentName</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">cohort</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">assignedCohort</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="nf">getInfo</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">String</span><span class="p">.</span><span class="na">format</span><span class="p">(</span><span class="s">"name: %s, cohort: %s"</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">cohort</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">Student</span><span class="w"> </span><span class="n">s1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Student</span><span class="p">(</span><span class="s">"Student A"</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="n">Student</span><span class="w"> </span><span class="n">s2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Student</span><span class="p">(</span><span class="s">"Student B"</span><span class="p">,</span><span class="w"> </span><span class="s">"Voyagers"</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">s1</span><span class="p">.</span><span class="na">getInfo</span><span class="p">());</span><span class="w"> </span><span class="c1">// "name: Student A cohort: Unassigned"</span><span class="w"></span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">s2</span><span class="p">.</span><span class="na">getInfo</span><span class="p">());</span><span class="w"> </span><span class="c1">// "name: Student B cohort: Voyagers"</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<p>Here we see an example of an overloaded constructor; there are two definitions
+that differ in parameter count.</p>
+<p>The first constructor accepts the student's name and sets the value of the
+<code>name</code> field based on what is passed to it. It also sets the value of the
+<code>cohort</code> field to the string <code>Unassigned</code>. The second constructor allows us
+to specify values for both the student's name and the cohort when the object is
+created.</p>
+<h2 id="the-this-keyword">The <code>this</code> Keyword</h2>
+<p>The <code>this</code> keyword provides us a way to refer to the current instance. You can
+think of <code>this</code> as saying "this object". You can only use the <code>this</code> keyword
+inside of an instance method, as it is an error to do so elsewhere.</p>
+<div class="highlight"><pre id="__code_10"><span></span><button class="md-clipboard md-icon" title="Copy to clipboard" data-clipboard-target="#__code_10 &gt; code"></button><code><span class="kd">class</span> <span class="nc">Person</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="nf">Person</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="na">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">name</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="nf">sayHello</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">String</span><span class="p">.</span><span class="na">format</span><span class="p">(</span><span class="s">"%s says hello!"</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">name</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<p>As you can see in the example above, in the constructor, the <code>this</code> keyword lets
+us unambiguously refer to the <code>name</code> field of the <code>Person</code> object that is 
+being created, even though we already have a variable named <code>name</code> in scope.</p>
+<p>The <code>this</code> keyword can also be used to call other constructors. Let's illustrate
+this by rewriting our <code>Student</code> class constructors from earlier.</p>
+<div class="highlight"><pre id="__code_11"><span></span><button class="md-clipboard md-icon" title="Copy to clipboard" data-clipboard-target="#__code_11 &gt; code"></button><code><span class="kd">class</span> <span class="nc">Student</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">cohort</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="nf">Student</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="k">this</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="s">"Unassigned"</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="nf">Student</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">cohort</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="na">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">name</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="na">cohort</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">cohort</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="nf">sayHello</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="s">"Hello from "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">name</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">"!"</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<p>Now, in the single argument constructor, instead of duplicating the code to
+assign to the object's fields, we call the constructor that already has this
+code defined. While this example is fairly small, it demonstrates how we can
+avoid duplication of code with multiple constructors.</p>
+<h2 id="visibility">Visibility</h2>
+<p><strong>Visibility</strong> refers to how a class or instance field is allowed to be
+accessed. It allows us to <em>encapsulate</em> the data in our classes; that is, only
+expose what is necessary to other classes and objects.</p>
+<p>Thus far, we have used the <code>public</code> keyword for all of our fields. The <code>public</code>
+keyword means that the field is accessible from everywhere. The next visibility
+keyword we'll introduce is <code>private</code>. When a field is defined as <code>private</code>, it
+is only accessible within the class that defines it.</p>
+<p>A common pattern in Java is to define classes with private fields, and
+create methods to allow access to those fields.</p>
+<div class="highlight"><pre id="__code_12"><span></span><button class="md-clipboard md-icon" title="Copy to clipboard" data-clipboard-target="#__code_12 &gt; code"></button><code><span class="kd">class</span> <span class="nc">Student</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">grade</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="nf">Student</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">grade</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="na">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">name</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="na">grade</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">grade</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="nf">shareGrade</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">grade</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<p>Here the <code>grade</code> field is defined as <code>private</code>, but we've also created a
+method to allow access to (but not re-assigning) the field named
+<code>shareGrade</code>.</p>
+<p>The code below uses the <code>Student</code> class we've just defined:</p>
+<div class="highlight"><pre id="__code_13"><span></span><button class="md-clipboard md-icon" title="Copy to clipboard" data-clipboard-target="#__code_13 &gt; code"></button><code><span class="kd">class</span> <span class="nc">StudentTest</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">Student</span><span class="w"> </span><span class="n">student</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Student</span><span class="p">(</span><span class="s">"John Doe"</span><span class="p">,</span><span class="w"> </span><span class="mf">82.4</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">student</span><span class="p">.</span><span class="na">name</span><span class="p">);</span><span class="w"> </span><span class="c1">// "John Doe"</span><span class="w"></span>
+<span class="w">        </span><span class="c1">// DON'T DO THIS - private properties can't be accessed outside the class</span><span class="w"></span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">student</span><span class="p">.</span><span class="na">grade</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">student</span><span class="p">.</span><span class="na">shareGrade</span><span class="p">());</span><span class="w"> </span><span class="c1">// Do this instead</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<p>Notice that accessing a private field of an object outside of the class
+that defines the object will result in a compile time error.</p>
+<p>For reference, here are all the visibility types available in Java:</p>
+<div class="md-typeset__scrollwrap"><div class="md-typeset__table"><table>
+<thead>
+<tr>
+<th>Modifier</th>
+<th>class</th>
+<th>package</th>
+<th>subclass</th>
+<th>project</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public</code></td>
+<td>y</td>
+<td>y</td>
+<td>y</td>
+<td>y</td>
+</tr>
+<tr>
+<td><code>protected</code></td>
+<td>y</td>
+<td>y</td>
+<td>y</td>
+<td>n</td>
+</tr>
+<tr>
+<td><code>no modifier (package private)</code></td>
+<td>y</td>
+<td>y</td>
+<td>n</td>
+<td>n</td>
+</tr>
+<tr>
+<td><code>private</code></td>
+<td>y</td>
+<td>n</td>
+<td>n</td>
+<td>n</td>
+</tr>
+</tbody>
+</table></div></div>
+<p>We'll learn more about the visibility types in a later lesson.</p>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Object-oriented_programming">Object-oriented programming</a></li>
+<li><a href="https://docs.oracle.com/javase/tutorial/java/concepts/index.html">Object Oriented Programming Concepts</a><ul>
+<li><a href="https://docs.oracle.com/javase/tutorial/java/concepts/object.html">What is an Object?</a></li>
+<li><a href="https://docs.oracle.com/javase/tutorial/java/concepts/class.html">What is a Class?</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="exercises">Exercises</h2>
+<ol>
+<li>
+<p>Object basics</p>
+<p>Create <code>Person</code> class inside of <code>src</code> that has a private <code>name</code> field
+that is a string, and the following methods:</p>
+</li>
+</ol>
+<div class="highlight"><pre id="__code_14"><span></span><button class="md-clipboard md-icon" title="Copy to clipboard" data-clipboard-target="#__code_14 &gt; code"></button><code><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="nf">getName</span><span class="p">(){</span><span class="w"></span>
+<span class="c1">//TODO: return the person's name</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">setName</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="p">){</span><span class="w"></span>
+<span class="c1">//TODO: change the name field to the passed value</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+<span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">sayHello</span><span class="p">(){</span><span class="w"></span>
+<span class="c1">//TODO: print a message to the console using the person's name</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<div class="codehilite"><pre id="__code_15"><span></span><button class="md-clipboard md-icon" title="Copy to clipboard" data-clipboard-target="#__code_15 &gt; code"></button><code><span class="n">The</span><span class="w"> </span><span class="n">class</span><span class="w"> </span><span class="n">should</span><span class="w"> </span><span class="n">have</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">constructor</span><span class="w"> </span><span class="n">that</span><span class="w"> </span><span class="n">accepts</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n n-Quoted">`String`</span><span class="w"> </span><span class="k">value</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="k">set</span><span class="n">s</span><span class="w"> </span>
+<span class="n">the</span><span class="w"> </span><span class="n">person</span><span class="s1">'s name to the passed string.</span>
+
+<span class="s1">Create a `main` method on the class that creates a new `Person` object and</span>
+<span class="s1">tests the above methods.</span>
+</code></pre></div>
+
+<ol>
+<li>
+<p>Understanding references</p>
+<p>The following code blocks make use of the <code>Person</code> class from the previous
+exercise. For each code block, think about what the code will output, then
+copy the code into IntelliJ and run it to see if it matches your
+expectations.</p>
+</li>
+</ol>
+<div class="highlight"><pre id="__code_16"><span></span><button class="md-clipboard md-icon" title="Copy to clipboard" data-clipboard-target="#__code_16 &gt; code"></button><code><span class="n">Person</span><span class="w"> </span><span class="n">person1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Person</span><span class="p">(</span><span class="s">"John"</span><span class="p">);</span><span class="w"></span>
+<span class="n">Person</span><span class="w"> </span><span class="n">person2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Person</span><span class="p">(</span><span class="s">"John"</span><span class="p">);</span><span class="w"></span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">person1</span><span class="p">.</span><span class="na">getName</span><span class="p">().</span><span class="na">equals</span><span class="p">(</span><span class="n">person2</span><span class="p">.</span><span class="na">getName</span><span class="p">()));</span><span class="w"></span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">person1</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">person2</span><span class="p">);</span><span class="w"></span>
+</code></pre></div>
+<div class="highlight"><pre id="__code_17"><span></span><button class="md-clipboard md-icon" title="Copy to clipboard" data-clipboard-target="#__code_17 &gt; code"></button><code><span class="n">Person</span><span class="w"> </span><span class="n">person1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Person</span><span class="p">(</span><span class="s">"John"</span><span class="p">);</span><span class="w"></span>
+<span class="n">Person</span><span class="w"> </span><span class="n">person2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">person1</span><span class="p">;</span><span class="w"></span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">person1</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">person2</span><span class="p">);</span><span class="w"></span>
+</code></pre></div>
+<div class="highlight"><pre id="__code_18"><span></span><button class="md-clipboard md-icon" title="Copy to clipboard" data-clipboard-target="#__code_18 &gt; code"></button><code><span class="n">Person</span><span class="w"> </span><span class="n">person1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Person</span><span class="p">(</span><span class="s">"John"</span><span class="p">);</span><span class="w"></span>
+<span class="n">Person</span><span class="w"> </span><span class="n">person2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">person1</span><span class="p">;</span><span class="w"></span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">person1</span><span class="p">.</span><span class="na">getName</span><span class="p">());</span><span class="w"></span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">person2</span><span class="p">.</span><span class="na">getName</span><span class="p">());</span><span class="w"></span>
+<span class="n">person2</span><span class="p">.</span><span class="na">setName</span><span class="p">(</span><span class="s">"Jane"</span><span class="p">);</span><span class="w"></span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">person1</span><span class="p">.</span><span class="na">getName</span><span class="p">());</span><span class="w"></span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">person2</span><span class="p">.</span><span class="na">getName</span><span class="p">());</span><span class="w"></span>
+</code></pre></div>
+<ol>
+<li>
+<p>Create an input validation class</p>
+<p>Create a package inside of <code>src</code> named <code>util</code>. Inside of <code>util</code>, create a
+class named <code>Input</code> that has a private field named <code>scanner</code>.  When an
+instance of this object is created, the <code>scanner</code> field should be set to
+a new instance of the <code>Scanner</code> class. The class should have the following
+methods, all of which return command line input from the user:</p>
+<ul>
+<li><code>String getString()</code></li>
+<li><code>boolean yesNo()</code></li>
+<li><code>int getInt(int min, int max)</code></li>
+<li><code>int getInt()</code></li>
+<li><code>double getDouble(double min, double max)</code></li>
+<li><code>double getDouble()</code></li>
+</ul>
+<p>The <code>yesNo</code> method should return <code>true</code> if the user enters <code>y</code>, <code>yes</code>, or
+variants thereof, and <code>false</code> otherwise.</p>
+<p>The <code>getInt(int min, int max)</code> method should keep prompting the user for
+input until they give an integer within the <code>min</code> and <code>max</code>. The <code>getDouble</code>
+method should do the same thing, but with decimal numbers.</p>
+<p>Create another class named <code>InputTest</code> that has a <code>static main</code> method that
+uses all the methods from the <code>Input</code> class.</p>
+<p><strong>Bonus</strong></p>
+<p>Allow all of your methods for getting input to accept an optional <code>String</code>
+parameter named <code>prompt</code>. If passed, the method should show the given prompt
+to the user before parsing the input.</p>
+</li>
+<li>
+<p><code>Circle</code> class</p>
+<p>Inside of <code>src</code>, create a package named <code>shapes</code>. Inside of <code>shapes</code>,
+create a class named <code>Circle</code>. This class should have a private <code>radius</code>
+field that is set through the constructor, and various methods for
+getting information about the circle, detailed below.</p>
+<div class="highlight"><pre id="__code_19"><span></span><button class="md-clipboard md-icon" title="Copy to clipboard" data-clipboard-target="#__code_19 &gt; code"></button><code><span class="kd">public</span><span class="w"> </span><span class="nf">Circle</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">radius</span><span class="p">)</span><span class="w"></span>
+<span class="kd">public</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="nf">getArea</span><span class="p">()</span><span class="w"></span>
+<span class="kd">public</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="nf">getCircumference</span><span class="p">()</span><span class="w"></span>
+</code></pre></div>
+<p>Inside of <code>shapes</code>, create a class named <code>CircleApp</code> that prompts the user
+for the radius of the circle using your <code>Input</code> class, creates a <code>Circle</code>
+object, and displays the circumference and area. (<em>Note that you will need
+to <code>import</code> your <code>Input</code> class.</em>)</p>
+<p>The formulas for the circumference and area:</p>
+<div class="codehilite"><pre id="__code_20"><span></span><button class="md-clipboard md-icon" title="Copy to clipboard" data-clipboard-target="#__code_20 &gt; code"></button><code>circumference = 2 x pi x radius
+area = pi x (radius ^ 2)
+</code></pre></div>
+
+<p>For the value of pi, use the <code>PI</code> constant of the <code>Math</code> class.</p>
+<p><strong>Bonus</strong></p>
+<p>After a circle is created, use the <code>yesNo</code> method of your <code>Input</code> class and
+ask the user if they would like to make another. Continue creating circles
+and displaying information about them until the user says they do not want
+to continue.</p>
+<p>Before exiting, the program should output the total number of circles
+created. Use a private static field, along with a public static
+method to keep track of and display the total number of circles created.</p>
+</li>
+</ol>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="https://java.codeup.com/java-ii/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Overview" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Overview
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="https://java.codeup.com/java-ii/arrays/" class="md-footer__link md-footer__link--next" aria-label="Next: Arrays" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Arrays
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset">Copied to clipboard</div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs"], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+  
+      <script src="./d_files/bundle.5a2dcb6a.min.js"></script>
+      
+        <script src="./d_files/keyboard-navigation.js"></script>
+      
+    
+  <script src="./d_files/custom.525be7f2.min.js"></script>
+
+    
+  
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
